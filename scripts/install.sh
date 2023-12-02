@@ -26,6 +26,8 @@ alias mp=\"python3 -m poetry run python \$JYYSLIDE_HOME/main.py \"
 alias pptnew=\"\$MYSLIDE_SCRIPT/new.sh \$1\"
 alias pptgen=\"\$MYSLIDE_SCRIPT/gen.sh \$1\"
 alias pptopen=\"\$MYSLIDE_SCRIPT/open.sh \$1\"
+alias pptshow=\"\$MYSLIDE_SCRIPT/show.sh \$1\"
+alias pptupd=\"\$MYSLIDE_SCRIPT/update.sh\"
 " >> ~/.$SHELL_CONF
 source ~/.$SHELL_CONF
 
