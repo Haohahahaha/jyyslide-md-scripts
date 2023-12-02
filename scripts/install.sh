@@ -20,6 +20,7 @@ export MYSLIDE_HOME=$FILEPATH
 export MYSLIDE_SCRIPT=$MYSLIDE_HOME/scripts
 alias pptnew="$MYSLIDE_SCRIPT/new.sh $1"
 alias pptgen="$MYSLIDE_SCRIPT/gen.sh $1"
+alias pptdel="$MYSLIDE_SCRIPT/delete.sh $1"
 alias pptopen="$MYSLIDE_SCRIPT/open.sh $1"
 alias pptshow="$MYSLIDE_SCRIPT/show.sh $1"
 alias pptupd="$MYSLIDE_SCRIPT/update.sh"
