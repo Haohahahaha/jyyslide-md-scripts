@@ -28,10 +28,8 @@ cp -r $GEN_FILE $TARGET
 if [ `grep -c "$1" $MYSLIDE_HOME/README.md` -ne '0' ]; then
     exit 0	
 else 
-
-	# write new directory entry to README
-	echo $'\n### ['$1'](./pages/'$1'/index.html)' >> $MYSLIDE_HOME/README.md
-
+    # write new directory entry to README
+    echo $'\n### ['$1'](./pages/'$1'/index.html)' >> $MYSLIDE_HOME/README.md
 fi
 
 
