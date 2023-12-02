@@ -13,7 +13,7 @@ GEN=$JYYSLIDE_HOME/example/$1
 GEN_FILE=$GEN/dist/*
 
 # copy source file to working path
-mkdir -p $GEN
+mkdir $GEN
 cp -r $SOURCE/* $GEN
 
 # generate slides by jyyslide-md
@@ -25,7 +25,13 @@ mkdir -p $TARGET
 # copy the results to TARGET folder
 cp -r $GEN_FILE $TARGET
 
-# write new directory entry to README
-echo $'\n### ['$1'](./pages/'$1'/index.html)' >> $MYSLIDE_HOME/README.md
+if [ `grep -c "$1" $MYSLIDE_HOME/README.md` -ne '0' ]; then
+    exit 0	
+else 
+
+	# write new directory entry to README
+	echo $'\n### ['$1'](./pages/'$1'/index.html)' >> $MYSLIDE_HOME/README.md
+
+fi
 
 
