@@ -17,7 +17,7 @@ git clone https://github.com/zweix123/jyyslide-md.git
 # configure environment variables
 export JYYSLIDE_HOME=$FILEPATH/jyyslide-md
 export MYSLIDE_HOME=$FILEPATH
-export MYSLIDE_SCRIPT=\$MYSLIDE_HOME/scripts
+export MYSLIDE_SCRIPT=$MYSLIDE_HOME/scripts
 alias pptnew="$MYSLIDE_SCRIPT/new.sh $1"
 alias pptgen="$MYSLIDE_SCRIPT/gen.sh $1"
 alias pptopen="$MYSLIDE_SCRIPT/open.sh $1"
