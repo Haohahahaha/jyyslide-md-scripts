@@ -1,4 +1,4 @@
-#!/bin/bash
+o#!/bin/bash
 # author: Haohahahaha (Haorui Zhang)
 # email: 1259203802@qq.com
 # date: 2023-11-19
@@ -33,7 +33,7 @@ echo "jyyslide-md" >> .gitignore
 mkdir -p $MYSLIDE_HOME/docs
 mkdir -p $MYSLIDE_HOME/pages
 
-# git init
+# git initialization
 git init
 git config --global user.email "$USER_EMAIL"
 git config --global user.name "$USER_NAME"
