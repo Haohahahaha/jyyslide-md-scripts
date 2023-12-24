@@ -1,11 +1,7 @@
-o#!/bin/bash
+#!/bin/bash
 # author: Haohahahaha (Haorui Zhang)
 # email: 1259203802@qq.com
 # date: 2023-11-19
-
-# environment variable
-# JYYSLIDE_HOME=/home/hanzhe/Documents/Repos/HaohahaPPT/jyyslide-md
-# MYSLIDE_HOME=/home/hanzhe/Documents/Repos/HaohahaPPT
 
 # install jyyslide-md
 sudo apt install python3
@@ -14,7 +10,9 @@ python3 -m pip install poetry
 git clone https://github.com/zweix123/jyyslide-md.git
 (cd jyyslide-md && python3 -m poetry install)
 
+FILEPATH=`pwd`
 # configure environment variables
+echo "
 export JYYSLIDE_HOME=$FILEPATH/jyyslide-md
 export MYSLIDE_HOME=$FILEPATH
 export MYSLIDE_SCRIPT=$MYSLIDE_HOME/scripts
@@ -24,6 +22,7 @@ alias pptdel="$MYSLIDE_SCRIPT/delete.sh $1"
 alias pptopen="$MYSLIDE_SCRIPT/open.sh $1"
 alias pptshow="$MYSLIDE_SCRIPT/show.sh $1"
 alias pptupd="$MYSLIDE_SCRIPT/update.sh"
+" >> ~/.zshrc
 
 # new gitignore file
 touch .gitignore
