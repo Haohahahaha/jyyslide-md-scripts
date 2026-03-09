@@ -4,7 +4,7 @@
 
 ## Install
 
-[jyyslide-md-scripts 安裝指南 - 浩哈哈哈哈](http://cs.haohaha.cn/greenhand/jyyslide-md-script/install/)
+[jyyslide-md-scripts 安裝指南 - 浩哈哈哈哈](https://cs.haohaha.cn/03-blog/02-PPT_Plus/install/)
 
 ## Bugs
 
