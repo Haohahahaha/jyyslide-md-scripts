@@ -17,6 +17,7 @@ mkdir $GEN
 cp -r $SOURCE/* $GEN
 
 # generate slides by jyyslide-md
+echo "[PPT Genarate] Working ..."
 (cd $JYYSLIDE_HOME && python3 -m poetry run python $JYYSLIDE_HOME/main.py $GEN/$1.md)
 
 # new target folder
